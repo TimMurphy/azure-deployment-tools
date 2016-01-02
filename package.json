@@ -1,0 +1,21 @@
+{
+  "name": "azure-deployment-tools",
+  "version": "0.1.0",
+  "description": "Collection of cmd scripts to install deployment tools on an Azure website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimMurphy/azure-deployment-tools.git"
+  },
+  "author": "Tim Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimMurphy/azure-deployment-tools/issues"
+  },
+  "homepage": "https://github.com/TimMurphy/azure-deployment-tools#readme",
+  "devDependencies": {
+    "7zip": "0.0.3"
+  }
+}
