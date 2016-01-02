@@ -1,19 +1,19 @@
 @echo off
 echo Binding Ruby DevKit 4.7.2... 
 rem Must change directory to config.yml is written and read from correct location
-pushd %DEPLOYMENT_TOOLS%\ruby-devkit
+pushd %ADT_TOOLS%\ruby-devkit
 if "%ERRORLEVEL%" NEQ "0" goto error
 
 echo Creating Ruby DevKit config.yml...
-%DEPLOYMENT_TOOLS%\ruby\bin\ruby.exe dk.rb init
+%ADT_TOOLS%\ruby\bin\ruby.exe dk.rb init
 if "%ERRORLEVEL%" NEQ "0" goto error
 
 echo Adding Ruby to Ruby DevKit config.yml...
-echo - %DEPLOYMENT_TOOLS%\ruby >> config.yml
+echo - %ADT_TOOLS%\ruby >> config.yml
 if "%ERRORLEVEL%" NEQ "0" goto error
  
 echo Binding...
-%DEPLOYMENT_TOOLS%\ruby\bin\ruby.exe dk.rb install
+%ADT_TOOLS%\ruby\bin\ruby.exe dk.rb install
 if "%ERRORLEVEL%" NEQ "0" goto error
 
 :exit

@@ -1,2 +1,4 @@
 deployment-tools/
 node_modules/
+.deployment
+deploy*.cmd
