@@ -23,6 +23,9 @@ if "%ERRORLEVEL%" neq "0" goto error
 
 call .\scripts\install-ruby-devkit-4.7.2.cmd
 if "%ERRORLEVEL%" neq "0" goto error
+
+call .\scripts\install-gem-bundler.cmd
+if "%ERRORLEVEL%" neq "0" goto error
             
 echo.
 echo.
