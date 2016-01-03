@@ -37,6 +37,11 @@ if not exist %ADT_7ZIP% (
 )
 
 echo The environment is correctly configured for azure-deployment-tools.
+echo.
+echo --------------------------------------------------------------------
+set
+echo --------------------------------------------------------------------
+echo.
 exit /b 0
 
 :error
